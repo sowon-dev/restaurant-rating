@@ -9,7 +9,9 @@ function App() {
 		<h2>부산진구</h2>
 		  <Card area="서면" name="맛찬들왕소금구이" star="★★★★★" menu="" link="http://naver.me/xcukMcIK" />
 		  <br />
-		  <Card area="서면" name="맛찬들왕소금구이" star="★★★★★" menu="" link="http://naver.me/xcukMcIK" />
+		  <Card area="서면" name="덕자네방앗간(폐업)" star="★★☆☆☆" menu="" link="" />
+		  <br />
+		  <Card area="서면" name="아비꼬 NC백화점서면점" star="★★★☆☆" menu="" link="http://naver.me/G2Uxqbmj" />
 		  </header>
     </div>
   );
