@@ -17,6 +17,6 @@
 		{"areaNm":"서면", "name":"에그드랍", "star":5, "link":"http://naver.me/FHYAbjhC", "menu":"갈릭베이컨치즈"},
 		{"areaNm":"서면", "name":"원카츠 서면점", "star":5, "link":"http://naver.me/GbEccAYT", "menu":"등심카츠"},
 		{"areaNm":"서면", "name":"삼광보리밥", "star":4, "link":"http://naver.me/xGOmdNrs", "menu":""},
-		{"areaNm":"남구", "name":"", "star":, "link":"", "menu":""},
+		{"areaNm":"남구", "name":"", "star":0, "link":"", "menu":""}
 	]
 }

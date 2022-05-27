@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './component/Header'
-import Area from './component/Area';
+import Area from './component/Area.js';
 
 function App() {
   return (
