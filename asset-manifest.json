@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/restaurant-rating/static/css/main.29a25c70.css",
-    "main.js": "/restaurant-rating/static/js/main.cabf18b0.js",
+    "main.js": "/restaurant-rating/static/js/main.4393a12f.js",
     "static/js/787.de86d4ef.chunk.js": "/restaurant-rating/static/js/787.de86d4ef.chunk.js",
     "index.html": "/restaurant-rating/index.html",
     "main.29a25c70.css.map": "/restaurant-rating/static/css/main.29a25c70.css.map",
-    "main.cabf18b0.js.map": "/restaurant-rating/static/js/main.cabf18b0.js.map",
+    "main.4393a12f.js.map": "/restaurant-rating/static/js/main.4393a12f.js.map",
     "787.de86d4ef.chunk.js.map": "/restaurant-rating/static/js/787.de86d4ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29a25c70.css",
-    "static/js/main.cabf18b0.js"
+    "static/js/main.4393a12f.js"
   ]
 }
