@@ -17,6 +17,12 @@
 		{"areaNm":"서면", "name":"에그드랍", "star":5, "link":"http://naver.me/FHYAbjhC", "menu":"갈릭베이컨치즈"},
 		{"areaNm":"서면", "name":"원카츠 서면점", "star":5, "link":"http://naver.me/GbEccAYT", "menu":"등심카츠"},
 		{"areaNm":"서면", "name":"삼광보리밥", "star":4, "link":"http://naver.me/xGOmdNrs", "menu":""},
-		{"areaNm":"남구", "name":"", "star":0, "link":"", "menu":""}
+		{"areaNm":"부산진", "name":"팔팔돼지갈비", "star":5, "link":"http://naver.me/FS65cWGk", "menu":""},
+		{"areaNm":"중앙", "name":"그집 곱도리탕", "star":5, "link":"http://naver.me/x4buvH13", "menu":""},
+		{"areaNm":"남포", "name":"카페광복동", "star":5, "link":"http://naver.me/5356deFw", "menu":""},
+		{"areaNm":"남포", "name":"평산옥", "star":5, "link":"http://naver.me/FlJxufde", "menu":""},
+		{"areaNm":"부산역", "name":"고민끝에여기", "star":5, "link":"http://naver.me/FlJxYMlB", "menu":"전 메뉴"},
+		{"areaNm":"부산역", "name":"신창국밥 부산역점", "star":3, "link":"http://naver.me/FJH6Gj1J", "menu":"돼지국밥"},
+		{"areaNm":"", "name":"", "star":3, "link":"", "menu":""}
 	]
 }
