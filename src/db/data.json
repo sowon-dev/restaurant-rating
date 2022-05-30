@@ -26,6 +26,16 @@
 		{"areaNm":"수영", "name":"엄용백 돼지국밥", "star":4, "link":"http://naver.me/FLBKR3T4", "menu":"부산식 돼지국밥"},
 		{"areaNm":"센텀", "name":"에맥앤볼리오스 신세계백화점센텀시티점", "star":3, "link":"http://naver.me/535BdYbD", "menu":""},
 		{"areaNm":"센텀", "name":"그집숯불닭갈비 해운대본점", "star":5, "link":"http://naver.me/x50l1iuW", "menu":""},
-		{"areaNm":"해운대", "name":"갈비가맛있다", "star":4, "link":"http://naver.me/F9QpJFiv", "menu":""}
+		{"areaNm":"해운대", "name":"갈비가맛있다", "star":4, "link":"http://naver.me/F9QpJFiv", "menu":""},
+		{"areaNm":"사상", "name":"최뼈다구해장국", "star":5, "link":"http://naver.me/xJNad4DO", "menu":""},
+		{"areaNm":"사상", "name":"커피킹콩 부산본점", "star":5, "link":"http://naver.me/5mYgexqd", "menu":"아메리카노"},
+		{"areaNm":"사상", "name":"합천일류돼지국밥", "star":5, "link":"http://naver.me/FKKxxuzg", "menu":"전 메뉴"},
+		{"areaNm":"연산", "name":"북창동순두부 부산연산점", "star":5, "link":"http://naver.me/G5rJc8rn", "menu":"아메리카노"},
+		{"areaNm":"연산", "name":"찜닭상회", "star":5, "link":"http://naver.me/5jAMralL", "menu":"간장찜닭 치즈추가"},
+		{"areaNm":"연산", "name":"나정순쭈꾸미", "star":5, "link":"http://naver.me/xmrtagHN", "menu":"쭈꾸미 5점/안매움.볶음밥 비추"},
+		{"areaNm":"덕천", "name":"덕천구룡성", "star":1, "link":"http://naver.me/FrKl2Jwm", "menu":"맛없어"},
+		{"areaNm":"덕천", "name":"솔방구리삼겹살", "star":5, "link":"http://naver.me/5dxyuB78", "menu":"삽겹살목살세트 고기를 구워주고 맛있음. 된찌도맛남"},
+		{"areaNm":"덕천", "name":"골목", "star":2, "link":"http://naver.me/5rsMPoTa", "menu":"오리불고기/인테리어는 예쁘나 맛은 글쎄. 술집이라 시끄러움"},
+		{"areaNm":"모라", "name":"황태고을", "star":5, "link":"http://naver.me/IIq4swjt", "menu":"황태구이"}
 	]
 }
