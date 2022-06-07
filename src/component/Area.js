@@ -81,6 +81,26 @@ export default function Area() {
 				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
 			))}
 		</TabPanel>
+		<TabPanel value={value} index={3}>
+			{dataList.restaurants.filter(data => ( data.areaNm === '수영')).map((data, index) => (
+				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
+			))}
+		</TabPanel>
+		<TabPanel value={value} index={4}>
+			{dataList.restaurants.filter(data => ( data.areaNm === '덕천')).map((data, index) => (
+				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
+			))}
+		</TabPanel>
+		<TabPanel value={value} index={5}>
+			{dataList.restaurants.filter(data => ( data.areaNm === '사상')).map((data, index) => (
+				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
+			))}
+		</TabPanel>
+		<TabPanel value={value} index={6}>
+			{dataList.restaurants.filter(data => ( data.areaNm === '부산진')).map((data, index) => (
+				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
+			))}
+		</TabPanel>
 	</Box>
 
 	</>);
