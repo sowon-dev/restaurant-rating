@@ -6,6 +6,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
+import _ from 'lodash'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,6 +46,8 @@ export default function Area() {
 	const handleChange = (event, newValue) => {
     	setValue(newValue);
   	};
+    console.log("dataList.restaurants: ", dataList.restaurants)
+	const areaList = _.uniqBy(dataList.restaurants.map((restaurant) => restaurant.areaNm));
 	
 	return (<> 	
 	<Box sx={{ width: '100%' }}>
@@ -52,60 +55,28 @@ export default function Area() {
 		  <Tabs
 			value={value}
 			onChange={handleChange}
-			variant="scrollable"
+			//variant="scrollable"
 			scrollButtons="auto"
 			aria-label="scrollable auto tabs example"
-			centered
+			//centered
 		  >
-			<Tab label="서면" />
-			<Tab label="해운대" />
-			<Tab label="센텀" />
-			<Tab label="수영" />
-			<Tab label="덕천" />
-			<Tab label="사상" />
-			<Tab label="부산진" />
+		  {
+			areaList.map((areaNm, index) => (
+				<Tab label={areaNm} key={index}/>
+			))
+		  }
 		  </Tabs>
     	</Box>
-		<TabPanel value={value} index={0}>
-			{dataList.restaurants.filter(data => ( data.areaNm === '서면')).map((data, index) => (
-				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-			))}
-		</TabPanel>
-		<TabPanel value={value} index={1}>
-			{dataList.restaurants.filter(data => ( data.areaNm === '해운대')).map((data, index) => (
-				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-			))}
-		</TabPanel>
-		<TabPanel value={value} index={2}>
-			{dataList.restaurants.filter(data => ( data.areaNm === '센텀')).map((data, index) => (
-				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-			))}
-		</TabPanel>
-		<TabPanel value={value} index={3}>
-			{dataList.restaurants.filter(data => ( data.areaNm === '수영')).map((data, index) => (
-				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-			))}
-		</TabPanel>
-		<TabPanel value={value} index={4}>
-			{dataList.restaurants.filter(data => ( data.areaNm === '덕천')).map((data, index) => (
-				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-			))}
-		</TabPanel>
-		<TabPanel value={value} index={5}>
-			{dataList.restaurants.filter(data => ( data.areaNm === '사상')).map((data, index) => (
-				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-			))}
-		</TabPanel>
-		<TabPanel value={value} index={6}>
-			{dataList.restaurants.filter(data => ( data.areaNm === '부산진')).map((data, index) => (
-				<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-			))}
-		</TabPanel>
-	</Box>
 
+		{
+			areaList.map((areaNm, index) => (
+				<TabPanel value={value} index={index}>
+					{dataList.restaurants.filter(data => ( data.areaNm === areaNm)).map((data, index) => (
+						<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
+					))}
+				</TabPanel>
+			))		
+		}
+	</Box>
 	</>);
 }
-
-// {dataList.restaurants.map((data, index) => (
-//<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-// ))} 
