@@ -55,10 +55,9 @@ export default function Area() {
 		  <Tabs
 			value={value}
 			onChange={handleChange}
-			//variant="scrollable"
+			variant="scrollable"
 			scrollButtons="auto"
 			aria-label="scrollable auto tabs example"
-			//centered
 		  >
 		  {
 			areaList.map((areaNm, index) => (
