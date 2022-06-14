@@ -23,8 +23,8 @@ export default function ActionAreaCard(props) {
 			  <Typography variant="body2" color="text.secondary">
 				  {props.star}
 				  <div>
-					{/*<StarRating name="react-star-rating" size={props.star} totalStars={5} rating={3} />*/}
-					  <StarRating name="react-star-rating" size={props.star} totalStars={5} rating={props.star} />
+					{/*<StarRating name="react-star-rating" totalStars={5} rating={3} />*/}
+					  <StarRating name="react-star-rating" totalStars={5} rating={props.star} />
 				  </div>
 			  </Typography>
         	</CardContent>
