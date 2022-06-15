@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, Link } from '@mui/material';
 import StarRating from 'react-star-rating';
+import CardActions from '@mui/material/CardActions';
 
 export default function ActionAreaCard(props) {
   return (
@@ -16,20 +17,23 @@ export default function ActionAreaCard(props) {
 				height="140"
 			 	image="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldbphinf.pstatic.net%2F20210204_86%2F1612443702490itpAf_JPEG%2FIgBkGhWODsI04WI8er6uWgZ6.jpg"
 			 /> */}
-			 <CardContent> 
-			  <Typography gutterBottom variant="h5" component="div">
-				{props.area} {props.name}
-			  </Typography>
-			  <Typography variant="body2" color="text.secondary">
-				  {props.star}
-				  <div>
-					{/*<StarRating name="react-star-rating" totalStars={5} rating={3} />*/}
-					  <StarRating name="react-star-rating" totalStars={5} rating={props.star} />
-				  </div>
-			  </Typography>
+			<CardContent> 
+				<Typography gutterBottom variant="h5" component="div">
+					{props.area} {props.name}
+				</Typography>
+				<Typography variant="body2" color="text.secondary">
+					{props.star}
+				</Typography>
         	</CardContent>
+			<CardActions>
+				
+			</CardActions>
 		</Link>
       </CardActionArea>
     </Card>
   );
 }
+
+// <CardActions>
+// 	<StarRating name="react-star-rating" totalStars={5} rating={props.star} />
+// </CardActions>
