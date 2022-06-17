@@ -1,7 +1,9 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
+import StarRating from 'react-star-rating';
 
 export default function Write(){
+
 	return(
 		<form action="/api/write" method="post">
 			<div>
@@ -17,7 +19,7 @@ export default function Write(){
 				<input type='text' name='menu' placeholder='메뉴'/> 
 			</div>
 			<div>
-				별점입력
+				<StarRating name="react-star-rating" totalStars={5} step={1} onRatingClick />
 			</div>
 			<div>
 				<Button type="button" id="goToHome">뒤로가기</Button>
