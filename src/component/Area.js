@@ -49,33 +49,34 @@ export default function Area() {
     console.log("dataList.restaurants: ", dataList.restaurants)
 	const areaList = _.uniqBy(dataList.restaurants.map((restaurant) => restaurant.areaNm));
 	
-	return (<> 	
-	<Box sx={{ width: '100%' }}>
-		<Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }}>
-		  <Tabs
-			value={value}
-			onChange={handleChange}
-			variant="scrollable"
-			scrollButtons="auto"
-			aria-label="scrollable auto tabs example"
-		  >
-		  {
-			areaList.map((areaNm, index) => (
-				<Tab label={areaNm} key={index}/>
-			))
-		  }
-		  </Tabs>
-    	</Box>
+	return (
+		<> 	
+		<Box sx={{ width: '100%' }}>
+			<Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }}>
+			  <Tabs
+				value={value}
+				onChange={handleChange}
+				variant="scrollable"
+				scrollButtons="auto"
+				aria-label="scrollable auto tabs example"
+			  >
+			  {
+				areaList.map((areaNm, index) => (
+					<Tab label={areaNm} key={index}/>
+				))
+			  }
+			  </Tabs>
+			</Box>
 
-		{
-			areaList.map((areaNm, index) => (
-				<TabPanel value={value} index={index}>
-					{dataList.restaurants.filter(data => ( data.areaNm === areaNm)).map((data, index) => (
-						<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
-					))}
-				</TabPanel>
-			))		
-		}
-	</Box>
+			{
+				areaList.map((areaNm, index) => (
+					<TabPanel value={value} index={index}>
+						{dataList.restaurants.filter(data => ( data.areaNm === areaNm)).map((data, index) => (
+							<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
+						))}
+					</TabPanel>
+				))		
+			}
+		</Box>
 	</>);
 }

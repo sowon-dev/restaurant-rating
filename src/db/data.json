@@ -37,6 +37,7 @@
 		{"areaNm":"덕천", "name":"솔방구리삼겹살", "star":5, "link":"http://naver.me/5dxyuB78", "menu":"삽겹살목살세트 고기를 구워주고 맛있음. 된찌도맛남"},
 		{"areaNm":"덕천", "name":"골목", "star":2, "link":"http://naver.me/5rsMPoTa", "menu":"오리불고기/인테리어는 예쁘나 맛은 글쎄. 술집이라 시끄러움"},
 		{"areaNm":"모라", "name":"황태고을", "star":5, "link":"http://naver.me/IIq4swjt", "menu":"황태구이"},
-		{"areaNm":"수영", "name":"명가수영밀면 부산본점", "star":5, "link":"http://naver.me/5U1aXZYu", "menu":"밀면"}
+		{"areaNm":"수영", "name":"명가수영밀면 부산본점", "star":5, "link":"http://naver.me/5U1aXZYu", "menu":"밀면"},
+		{"areaNm":"마산", "name":"마산감성", "star":5, "link":"http://naver.me/FlJxzIll", "menu":"마산찐맛집: 로제파스타, 오무라이스"}
 	]
 }
