@@ -19,7 +19,7 @@ export default function Write(){
 				<input type='text' name='menu' placeholder='메뉴'/> 
 			</div>
 			<div>
-				<StarRating name="react-star-rating" totalStars={5} step={1} onRatingClick />
+				{/*<StarRating name="react-star-rating" totalStars={5} step={1} onRatingClick />*/}
 			</div>
 			<div>
 				<Button type="button" id="goToHome">뒤로가기</Button>

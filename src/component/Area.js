@@ -70,7 +70,7 @@ export default function Area() {
 
 			{
 				areaList.map((areaNm, index) => (
-					<TabPanel value={value} index={index}>
+					<TabPanel value={value} index={index} key={index}>
 						{dataList.restaurants.filter(data => ( data.areaNm === areaNm)).map((data, index) => (
 							<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
 						))}
