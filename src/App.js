@@ -14,7 +14,7 @@ function App() {
 		<header className="App-header">
 			 <Grid container columns={12}>
 				 <Grid item="ture" xs={2}>
-					<Link to="/"><Button variant="contained" item="ture" >HOME</Button></Link>
+					<Link to="/"><Button variant="contained" item="ture" className="btn">HOME</Button></Link>
 				</Grid>
 				<Grid item="ture" xs={6}> 
 					<TextField id="outlined-basic" label="검색어를 입력하세요." fullWidth variant="filled" focused item="ture"  />
