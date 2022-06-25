@@ -48,11 +48,12 @@ export default function Area() {
   	};
     console.log("dataList.restaurants: ", dataList.restaurants)
 	const areaList = _.uniqBy(dataList.restaurants.map((restaurant) => restaurant.areaNm));
-	
+	const styleBody = {
+		margin: "0 auto",
+	}
 	return (
-		<> 	
 		<Box sx={{ width: '100%' }}>
-			<Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }}>
+			<Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }} style={{margin:"0 auto"}}>
 			  <Tabs
 				value={value}
 				onChange={handleChange}
@@ -67,16 +68,17 @@ export default function Area() {
 			  }
 			  </Tabs>
 			</Box>
-
 			{
 				areaList.map((areaNm, index) => (
 					<TabPanel value={value} index={index} key={index}>
 						{dataList.restaurants.filter(data => ( data.areaNm === areaNm)).map((data, index) => (
-							<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} />
+							<Card key={index} area={data.areaNm} name={data.name} star={data.star} menu={data.menu} link={data.link} style={{margin:"0 auto"}} />
 						))}
 					</TabPanel>
 				))		
 			}
 		</Box>
-	</>);
+	);
 }
+
+// style={{display:"flex", justifyContent:"center", alignItems:"center", minHeight:"100vh"}}
