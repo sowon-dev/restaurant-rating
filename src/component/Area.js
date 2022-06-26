@@ -41,12 +41,12 @@ function a11yProps(index) {
   };
 }
 	
-export default function Area() {
+export default function Area(props) {
 	const [value, setValue] = React.useState(0);
 	const handleChange = (event, newValue) => {
     	setValue(newValue);
   	};
-    console.log("dataList.restaurants: ", dataList.restaurants)
+	console.log("props.filterData: ", props.filterData)
 	const areaList = _.uniqBy(dataList.restaurants.map((restaurant) => restaurant.areaNm));
 	const styleBody = {
 		margin: "0 auto",
